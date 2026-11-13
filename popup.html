@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Localhost apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="popup">
+  <header class="popup-header">
+    <span id="dot" class="dot"></span>
+    <h1>localhost</h1>
+    <span id="count" class="count"></span>
+    <button id="refresh" class="icon-button" type="button" title="Rescan localhost" aria-label="Rescan localhost">&#8635;</button>
+    <button id="settings" class="icon-button" type="button" title="Choose which ports to scan" aria-label="Settings">&#9881;</button>
+  </header>
+  <nav id="apps" class="apps" aria-label="Apps running on localhost"></nav>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

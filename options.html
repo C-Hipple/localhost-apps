@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Localhost Apps settings</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="options">
+    <h1>Localhost Apps</h1>
+    <p>The popup checks these ports on localhost for web apps each time you open it.</p>
+
+    <label for="ports">Ports to scan</label>
+    <textarea id="ports" spellcheck="false"></textarea>
+    <div id="ports-hint" class="hint"></div>
+
+    <label for="ignore">Never scan</label>
+    <textarea id="ignore" spellcheck="false"></textarea>
+    <div id="ignore-hint" class="hint">Databases and brokers that don't speak HTTP.</div>
+
+    <div class="actions">
+      <button id="save" class="primary" type="button">Save</button>
+      <button id="reset" type="button">Reset to defaults</button>
+      <span id="saved" class="saved"></span>
+    </div>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>
